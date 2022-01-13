@@ -9,7 +9,59 @@
 <body>
     <h1>Registration Form</h1>
     <form action="/process" method="post">
+        <div>
+            <label>First Name *</label>
+            <input type="text" name="firstName">
+        </div>
+        <div><label>Last Name *</label>
+            <input type="text" name="lastName">
+        </div>
+        <div><label>Email Address *</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label>Password *</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>Confirm Password *</label>
+            <input type="password" name="confirmPassword">
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label>Gender Identity:</label>
+            <br>
+            <input type="radio" name="male">
+            <label for="male">Male</label>
+            <input type="radio" name="female">
+            <label for="female">Female</label>
+            <input type="radio" name="non-binary">
+            <label for="non-binary">Non-binary</label>
+            <input type="radio" name="preferNotToAnswer">
+            <label for="preferNotToAnswer">I prefer not to answer</label>
+        </div>
+        <div>
+            <label>A short description bout myself</label>
+            <br>
+            <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label>Favorite Language</label>
+            <select name="language" >
+                <option >JavaScript</option>
+                <option >PHP</option>
+                <option >Ruby</option>
+                <option >C#</option>
+            </select>
+            <br>
+            <input type="checkbox">
+            <label>Yes I would like to recieve periodic email updates</label>
+        </div>
         <input type="submit" value="Create Account">
+        <p>* Indicates a required field</p>
     </form>
 </body>
 </html>
